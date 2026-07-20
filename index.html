@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soccer Streaming Guide (U.S.) — Peacock + Paramount+</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #151c2c;
+      --card2: #1a2335;
+      --border: #243044;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --good: #34d399;
+      --warn: #fbbf24;
+      --bad: #f87171;
+      --chip: #1e293b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .subtitle { color: var(--muted); margin: 0; max-width: 48rem; }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--chip);
+      border: 1px solid var(--border);
+      color: var(--accent);
+    }
+    .badge.have { color: var(--good); border-color: #065f46; background: #052e24; }
+    .badge.pref { color: var(--warn); border-color: #854d0e; background: #2a2108; }
+    nav.toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+    }
+    nav.toc h2 {
+      margin: 0 0 0.6rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    nav.toc ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    nav.toc a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+    nav.toc a:hover { text-decoration: underline; }
+    section { margin-bottom: 2.5rem; }
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      border-left: 3px solid var(--accent);
+      padding-left: 0.65rem;
+    }
+    h3 {
+      margin: 1.5rem 0 0.6rem;
+      font-size: 1.05rem;
+      color: var(--accent);
+    }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    .callout {
+      background: linear-gradient(135deg, #0f2744 0%, var(--card) 100%);
+      border: 1px solid #1e4976;
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
+      margin-bottom: 1.25rem;
+    }
+    .callout strong { color: var(--accent); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      font-size: 0.92rem;
+    }
+    th, td {
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--card2);
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(56, 189, 248, 0.04); }
+    .yes { color: var(--good); font-weight: 600; }
+    .no { color: var(--bad); font-weight: 600; }
+    .partial { color: var(--warn); font-weight: 600; }
+    .skip { color: var(--muted); }
+    .table-wrap {
+      overflow-x: auto;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+    }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Soccer Streaming Guide (U.S.)</h1>
+      <p class="subtitle">
+        Club leagues, club cups, and country cups — built around what you already have
+        (<strong>Peacock</strong> + <strong>Paramount+</strong>). Spanish commentary is fine for you,
+        so free English-only Bundesliga on Fandango is optional, not needed.
+      </p>
+      <div class="badge-row">
+        <span class="badge have">You have: Peacock</span>
+        <span class="badge have">You have: Paramount+</span>
+        <span class="badge pref">Spanish OK</span>
+        <span class="badge">Focus: Top 6 + major cups</span>
+      </div>
+    </header>
+
+    <nav class="toc">
+      <h2>On this page</h2>
+      <ul>
+        <li><a href="#types">Three kinds of soccer</a></li>
+        <li><a href="#you-have">What you already cover</a></li>
+        <li><a href="#leagues">1. Club leagues</a></li>
+        <li><a href="#club-cups">2. Club cups</a></li>
+        <li><a href="#country-cups">3. Country cups</a></li>
+        <li><a href="#apps">App scoreboard</a></li>
+        <li><a href="#gaps">Gaps &amp; next apps</a></li>
+        <li><a href="#stacks">Recommended stacks</a></li>
+        <li><a href="#cheatsheet">Name cheat sheet</a></li>
+      </ul>
+    </nav>
+
+    <section id="types">
+      <h2>Three kinds of soccer</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Type</th><th>Who plays</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Club league</strong></td><td>City / club teams, full season</td><td>Premier League, La Liga, MLS</td></tr>
+            <tr><td><strong>Club cup</strong></td><td>Clubs (often best from many countries)</td><td>Champions League, Europa League</td></tr>
+            <tr><td><strong>Country cup</strong></td><td><strong>National teams</strong> (countries / flags)</td><td>World Cup, Euros, Copa America</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">Club competitions run most of the year. Country cups are big events every 2-4 years (plus qualifiers and Nations League in between).</p>
+    </section>
+
+    <section id="you-have">
+      <h2>What you already cover</h2>
+      <div class="callout">
+        <strong>With Peacock + Paramount+ (Spanish OK):</strong>
+        England (Premier League), Italy (Serie A), Germany (Bundesliga in Spanish),
+        plus Europe's main club cups — Champions League, Europa League, and Conference League.
+        That's a strong core before buying anything else.
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Category</th><th>You get</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Club leagues</strong></td><td>England, Italy, Germany</td></tr>
+            <tr><td><strong>Club cups</strong></td><td>Champions League, Europa League, Conference League</td></tr>
+            <tr><td><strong>Country cups</strong></td><td>Often Spanish World Cup stream on Peacock when that deal applies; otherwise Telemundo / Universo for Spanish World Cup coverage</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="leagues">
+      <h2>1. Club leagues (season-long)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>League</th><th>Country / region</th><th>Starts (2026/27)</th><th>Primary U.S. apps</th><th>You have it?</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Premier League</strong></td><td>England</td><td>Aug 21, 2026</td><td>Peacock (most) + USA/NBC (select)</td><td class="yes">Yes</td></tr>
+            <tr><td><strong>Serie A</strong></td><td>Italy</td><td>Aug 22-23, 2026</td><td>Paramount+</td><td class="yes">Yes</td></tr>
+            <tr><td><strong>Bundesliga</strong></td><td>Germany</td><td>Aug 28, 2026</td><td>Peacock (Spanish) / Fandango free (English)</td><td class="yes">Yes (Spanish)</td></tr>
+            <tr><td><strong>La Liga</strong></td><td>Spain</td><td>Mid-Aug 2026 (~14-16)</td><td>ESPN+</td><td class="no">No</td></tr>
+            <tr><td><strong>Ligue 1</strong></td><td>France</td><td>Aug 21-23, 2026</td><td>beIN SPORTS / beIN CONNECT or Fanatiz</td><td class="no">No</td></tr>
+            <tr><td><strong>MLS</strong></td><td>USA / Canada</td><td>Ongoing (resumed mid-July)</td><td>Apple TV (all matches)</td><td class="no">No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">You already cover <strong>3 of 6</strong> top leagues (England + Italy + Germany).</p>
+    </section>
+
+    <section id="club-cups">
+      <h2>2. Club cups (clubs, knockout / multi-team)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Competition</th><th>Who plays</th><th>Level</th><th>Primary U.S. apps (typical)</th><th>You have it?</th></tr></thead>
+          <tbody>
+            <tr><td><strong>UEFA Champions League</strong></td><td>Top clubs from Europe</td><td>Europe's #1 club cup</td><td>Paramount+ (English; all matches)</td><td class="yes">Yes — big bonus</td></tr>
+            <tr><td><strong>UEFA Europa League</strong></td><td>Strong European clubs (tier 2)</td><td>Europe</td><td>Paramount+</td><td class="yes">Yes</td></tr>
+            <tr><td><strong>UEFA Conference League</strong></td><td>European clubs (tier 3)</td><td>Europe</td><td>Paramount+</td><td class="yes">Yes</td></tr>
+            <tr><td><strong>Leagues Cup</strong></td><td>MLS + Liga MX (Mexico) clubs</td><td>North America</td><td>Apple TV (all; some also on cable)</td><td class="no">No</td></tr>
+            <tr><td><strong>Copa Libertadores</strong></td><td>Top clubs from South America</td><td>South America</td><td>Often beIN</td><td class="no">No</td></tr>
+            <tr><td><strong>FIFA Club World Cup</strong></td><td>Champion clubs from each continent</td><td>Global</td><td>Varies (often Fox / big TV)</td><td class="partial">Check per year</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">Paramount+ is especially valuable — not only Serie A, but Europe's main club cups too.</p>
+    </section>
+
+    <section id="country-cups">
+      <h2>3. Country cups (countries play countries)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Competition</th><th>Who plays</th><th>Level</th><th>How often</th><th>Primary U.S. apps (typical)</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><strong>FIFA World Cup</strong></td><td>National teams worldwide</td><td>Global</td><td>Every 4 years</td><td>Fox / FS1 / Fox One (English); Telemundo / Universo (Spanish); Peacock often streams Spanish package</td><td>Men's 2026 is the big one</td></tr>
+            <tr><td><strong>UEFA European Championship (Euros)</strong></td><td>European countries</td><td>Continent</td><td>Every 4 years</td><td>Varies by cycle (often Fox or similar)</td><td>Europe's country cup</td></tr>
+            <tr><td><strong>Copa America</strong></td><td>South American countries (+ guests)</td><td>Continent</td><td>~Every 4 years</td><td>Varies (often Fox / Spanish networks)</td><td>South America's country cup</td></tr>
+            <tr><td><strong>CONCACAF Gold Cup</strong></td><td>USA, Mexico, Canada, Caribbean, Central America</td><td>Continent</td><td>Every 2 years</td><td>Often Fox / Spanish networks (e.g. TUDN)</td><td>Your region's country cup</td></tr>
+            <tr><td><strong>Africa Cup of Nations (AFCON)</strong></td><td>African countries</td><td>Continent</td><td>Every 2 years</td><td>Often beIN</td><td>Africa</td></tr>
+            <tr><td><strong>Asian Cup</strong></td><td>Asian countries</td><td>Continent</td><td>Every 4 years</td><td>Varies</td><td>Asia</td></tr>
+            <tr><td><strong>UEFA / CONCACAF Nations League</strong></td><td>Countries in a league format</td><td>Regional</td><td>Ongoing cycles</td><td>Varies</td><td>Between big tournaments</td></tr>
+            <tr><td><strong>Olympics</strong> (soccer)</td><td>National teams (men often U-23)</td><td>Global</td><td>Every 4 years</td><td>Usually NBC / Peacock family</td><td>Smaller than World Cup</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="apps">
+      <h2>App scoreboard — what each app is for</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>App</th><th>Club leagues</th><th>Club cups</th><th>Country cups</th><th>Approx. cost</th><th>For you</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Peacock</strong> <span class="yes">(have)</span></td><td>England (most) + Germany (Spanish)</td><td>—</td><td>Often Spanish World Cup stream; Olympics soccer in NBC years</td><td>$8–14/mo</td><td class="yes">Keep</td></tr>
+            <tr><td><strong>Paramount+</strong> <span class="yes">(have)</span></td><td>Italy</td><td>Champions + Europa + Conference</td><td>Occasional other CBS soccer</td><td>~$8/mo</td><td class="yes">Keep — huge club-cup value</td></tr>
+            <tr><td><strong>ESPN+</strong></td><td>Spain (La Liga)</td><td>Some other ESPN soccer</td><td>Some international windows</td><td>~$12/mo</td><td class="yes">Best next paid add</td></tr>
+            <tr><td><strong>Apple TV</strong></td><td>MLS</td><td>Leagues Cup (MLS vs Mexico clubs)</td><td>—</td><td>~$10–13/mo</td><td class="skip">Only if you want USA/Mexico club action</td></tr>
+            <tr><td><strong>beIN / Fanatiz</strong></td><td>France (Ligue 1)</td><td>Often Copa Libertadores</td><td>Often AFCON</td><td>~$10–15/mo</td><td class="skip">France + SA clubs + Africa countries</td></tr>
+            <tr><td><strong>Fandango</strong></td><td>Germany (English, free)</td><td>—</td><td>—</td><td>Free</td><td class="skip">Skip — you already have German league in Spanish</td></tr>
+            <tr><td><strong>Fox One / cable Fox</strong></td><td>Select matches</td><td>Select club events</td><td>World Cup (English), often Euros / Gold Cup / Copa America</td><td>Varies</td><td class="skip">Mainly big country tournaments (English)</td></tr>
+            <tr><td><strong>Telemundo / Universo</strong></td><td>—</td><td>Spanish UEFA club rights can shift over time</td><td>World Cup (Spanish) + other big country events</td><td>Free OTA / cable / apps</td><td class="yes">Great if you watch in Spanish</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="gaps">
+      <h2>Still missing — if you care</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Want…</th><th>Country / focus</th><th>Add</th></tr></thead>
+          <tbody>
+            <tr><td>La Liga</td><td>Spain</td><td><strong>ESPN+</strong></td></tr>
+            <tr><td>Ligue 1</td><td>France</td><td>beIN / Fanatiz</td></tr>
+            <tr><td>MLS + Leagues Cup</td><td>USA / Canada (+ Mexico clubs in cup)</td><td>Apple TV</td></tr>
+            <tr><td>South American clubs / AFCON</td><td>South America / Africa</td><td>beIN / Fanatiz</td></tr>
+            <tr><td>Big country tournaments</td><td>World / regional</td><td>Often Fox / Spanish free TV — check per event</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>What each extra app adds (Spanish OK)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>App</th><th>Adds</th><th>Country</th><th>Cost</th><th>Worth it?</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ESPN+</strong></td><td>All La Liga</td><td>Spain</td><td>~$12/mo</td><td class="yes">Yes — first add</td></tr>
+            <tr><td><strong>beIN / Fanatiz</strong></td><td>Most Ligue 1 (+ often Libertadores / AFCON)</td><td>France (+ SA / Africa)</td><td>~$10–15/mo</td><td class="skip">Only if you want France (or those extras)</td></tr>
+            <tr><td><strong>Apple TV</strong></td><td>All MLS + Leagues Cup</td><td>USA / Canada</td><td>~$10–13/mo</td><td class="skip">Only if you want MLS</td></tr>
+            <tr><td><strong>Fandango</strong></td><td>English Bundesliga</td><td>Germany</td><td>Free</td><td class="skip">Skip — Spanish already on Peacock</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="stacks">
+      <h2>Recommended stacks (for you)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Goal</th><th>Do this</th><th>What you unlock</th><th>Top-6 leagues</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Best next step</strong></td><td>Keep Peacock + Paramount+ → add <strong>ESPN+</strong></td><td>Spain (La Liga); keep Europe's top club cups</td><td class="yes">4 — England, Italy, Germany, Spain</td></tr>
+            <tr><td><strong>All Big 5 Europe</strong></td><td>Above + beIN / Fanatiz</td><td>+ France (Ligue 1)</td><td class="yes">5 European</td></tr>
+            <tr><td><strong>Full top 6</strong></td><td>Above + Apple TV</td><td>+ MLS + Leagues Cup</td><td class="yes">6</td></tr>
+            <tr><td><strong>Country mega-events</strong></td><td>Often no extra sub — Telemundo (Spanish) or Fox when needed</td><td>World Cup, Gold Cup, etc.</td><td class="skip">Event-based</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <strong>Bottom line:</strong> You're set for England, Italy, and Germany, plus Champions / Europa / Conference.
+        Next paid app is <strong>ESPN+</strong> for Spain (La Liga). Skip Fandango. Add beIN/Fanatiz or Apple TV only if you care about France or MLS.
+      </div>
+    </section>
+
+    <section id="cheatsheet">
+      <h2>One-page name cheat sheet</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Name</th><th>Country / region</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr><td>Premier League</td><td>England</td><td>Club league</td></tr>
+            <tr><td>La Liga</td><td>Spain</td><td>Club league</td></tr>
+            <tr><td>Serie A</td><td>Italy</td><td>Club league</td></tr>
+            <tr><td>Bundesliga</td><td>Germany</td><td>Club league</td></tr>
+            <tr><td>Ligue 1</td><td>France</td><td>Club league</td></tr>
+            <tr><td>MLS</td><td>USA / Canada</td><td>Club league</td></tr>
+            <tr><td>Champions League</td><td>Europe (clubs)</td><td>Club cup</td></tr>
+            <tr><td>Europa / Conference League</td><td>Europe (clubs)</td><td>Club cup</td></tr>
+            <tr><td>Leagues Cup</td><td>USA + Mexico (clubs)</td><td>Club cup</td></tr>
+            <tr><td>Copa Libertadores</td><td>South America (clubs)</td><td>Club cup</td></tr>
+            <tr><td>World Cup</td><td>World (countries)</td><td>Country cup</td></tr>
+            <tr><td>Euros</td><td>Europe (countries)</td><td>Country cup</td></tr>
+            <tr><td>Copa America</td><td>South America (countries)</td><td>Country cup</td></tr>
+            <tr><td>Gold Cup</td><td>N/C America + Caribbean (countries)</td><td>Country cup</td></tr>
+            <tr><td>AFCON</td><td>Africa (countries)</td><td>Country cup</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Rights can shift year to year — double-check apps at the start of each season or tournament.
+      Guide tailored for U.S. viewing with Peacock + Paramount+ already subscribed; Spanish commentary preferred when available.
+      Generated for easy browser digest · 2026.
+    </footer>
+  </div>
+</body>
+</html>
